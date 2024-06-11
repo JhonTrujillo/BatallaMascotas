@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Pets!</title>
+    <script src="./js/index.js"></script> 
+    <script src="./js/mascotarival.js"></script>
+    <script src="./js/ataqueJugador.js"></script>
+    <script src="./js/ataqueRival.js"></script>
+    <script src="./js/mensaje.js"></script>
+    <script src="./js/combate.js"></script>
+</head>
+<body>
+    <h1>Batalla Mascotas 🔥💧☘️</h1>
+    <section id="selecionar-mascota">
+        <h2>Elige tu mascota:</h2>
+        <!-- squirtle -> Agua, bulbasaur -> Tierra, sharmander -> Fuego -->
+        <label for="squirtle">Squirtle</label>
+        <input type="radio" id="squirtle" name="mascota">
+        <label for="bulbasaur">Bulbasaur</label>
+        <input type="radio" id="bulbasaur" name="mascota">
+        <label for="sharmander">Sharmander</label>
+        <input type="radio" id="sharmander" name="mascota">
+        <button id=btn-selecionar-mascota>Seleccionar</button>
+    </section>
+    <section id="selecionar-ataque">
+        <h2>Elige tu ataque:</h2>
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-rival"></span> del rival tiene <span id="vidas-rival">3</span> vidas</p>
+        <p>
+            <button id="btn-fuego">Fuego 🔥</button>
+            <button id="btn-agua">Agua 💧</button>
+            <button id="btn-tierra">Tierra ☘️</button>
+        </p>
+    </section>
+    <section id="mensajes">
+        <!-- Agua vs Fuego = Gana Agua -->
+        <!-- Fuego vs Tierra = Gana Fuego -->
+        <!-- Tierra vs Agua = Gana Tierra -->
+        <!-- <p>Tu mascota ataco con Fuego, La mascota del rival ataco con Tierra - Pendiente</p> -->
+    </section>
+    <section id="reiniciar">
+        <button id="btn-reiniciar">Reiniciar</button>
+    </section>
+    
+</body>
+</html>
