@@ -10,21 +10,34 @@
     <script src="./js/ataqueRival.js"></script>
     <script src="./js/mensaje.js"></script>
     <script src="./js/combate.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <h1>Batalla Mascotas 🔥💧☘️</h1>
     <section id="selecionar-mascota">
-        <h2>Elige tu mascota:</h2>
+        <h1 id="titulo">Batalla Mascotas 🔥💧☘️</h1>
+        <h2 id="subtitulo">Elige tu mascota:</h2>
+        <div class="tarjetas">
         <!-- squirtle -> Agua, bulbasaur -> Tierra, sharmander -> Fuego -->
-        <label for="squirtle">Squirtle</label>
+        <label class="tarjeta-mascota" for="squirtle">
+            <p>Squirtle</p>
+            <img src="./img/squirtle.png" alt="Squirtle">
+        </label>
         <input type="radio" id="squirtle" name="mascota">
-        <label for="bulbasaur">Bulbasaur</label>
+        <label class="tarjeta-mascota" for="bulbasaur">
+           <p>Bulbasaur</p> 
+            <img src="./img/bulbasaur.png" alt="Bulbasaur">
+        </label>
         <input type="radio" id="bulbasaur" name="mascota">
-        <label for="sharmander">Sharmander</label>
+        <label class="tarjeta-mascota" for="sharmander">
+            <p>Sharmander</p>
+            <img src="./img/sharmander.png" alt="Sharmander">
+        </label>
         <input type="radio" id="sharmander" name="mascota">
+        </div>
         <button id=btn-selecionar-mascota>Seleccionar</button>
     </section>
     <section id="selecionar-ataque">
+        <h1 id="titulo">Batalla Mascotas 🔥💧☘️</h1>
         <h2>Elige tu ataque:</h2>
         <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
         <p>La mascota <span id="mascota-rival"></span> del rival tiene <span id="vidas-rival">3</span> vidas</p>
