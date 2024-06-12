@@ -45,6 +45,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .tarjeta-mascota img{
@@ -53,7 +54,11 @@ body{
 }
 
 input{
-    display: none;
+    display: none; 
+}
+
+input:checked + label{
+    background: red;
 }
 
 button{
@@ -69,4 +74,56 @@ button{
 
 button:hover{
     border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Estilo Section ataque */
+#selecionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-fuego{
+    background: rgb(228, 11, 11);
+    color: black;
+}
+
+#btn-agua{
+    background: aqua;
+    color: black
+}
+
+#btn-tierra{
+    background: chocolate;
+    color: black
+}
+
+#mensajes{
+    width: 180px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensajes p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.marcadores{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: center;
+}
+
+#tarjeta-jugador, #tarjeta-rival{
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 20px;
 }

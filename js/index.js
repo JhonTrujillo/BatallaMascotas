@@ -23,7 +23,7 @@ function iniciarJuego(){
 function seleccionarMascotaJugador(){
     // Desocultar Menu de ataque
     let sectionSeleccionarAtaque = document.getElementById("selecionar-ataque")
-    sectionSeleccionarAtaque.style.display = "block"
+    sectionSeleccionarAtaque.style.display = "flex"
 
     // ocultar Seccion mascota
     let sectionSeleccionarMascota = document.getElementById("selecionar-mascota")

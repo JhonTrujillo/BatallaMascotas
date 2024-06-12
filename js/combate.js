@@ -17,7 +17,7 @@ function combate(){
         spanVidasRival.innerHTML = vidasRival
      }else if(ataqueJugador == "TIERRA" && ataqueRival == "AGUA"){
         crearMensaje(" GANASTE")
-        vvidasRival--
+        vidasRival--
         spanVidasRival.innerHTML = vidasRival
     }else{
         crearMensaje("PERDISTE")
@@ -37,25 +37,3 @@ function revisarVidas(){
     }
 }
 
-function crearMensajeFinal(resultadofinal){
-    //desocultar boton reiniciar
-    let sectionReiniciar = document.getElementById("reiniciar")
-    sectionReiniciar.style.display = "block"
-
-    let sectionMensajes = document.getElementById("mensajes") //Selecionamos la Section donde se inserta el mensaje
-    let parrafo = document.createElement('p')//Creamos elemento de tipo "p"
-    //creamos el mensaje con js
-    parrafo.innerHTML = resultadofinal
-    sectionMensajes.appendChild(parrafo) // insertamos el mensaje
-
-    let botonFuego = document.getElementById("btn-fuego")
-    botonFuego.disabled = true
-    let botonAgua = document.getElementById("btn-agua")
-    botonAgua.disabled = true
-    let botonTierra = document.getElementById("btn-tierra")
-    botonTierra.disabled = true
-}
-
-function reiniciarJuego(){
-    location.reload()
-}
