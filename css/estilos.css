@@ -127,3 +127,18 @@ button:hover{
     background: white;
     border-radius: 20px;
 }
+
+/* Mediaquery */
+@media (max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .container-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .marcadores{
+        grid-template-columns: 200px;
+        text-align: center;
+    }
+}
